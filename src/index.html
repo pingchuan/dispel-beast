@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+  <div class="list">
+    <div class="title">
+      <div>当前页面脚本：</div>
+      <div class="link" id="status"><span>开启</span>元素采集</div>
+    </div>
+    <div id="table"></div>
+  </div>
+  <form class="form" name="formValue">
+    <input name="selector" placeholder="请输入元素selector字符串" />
+    <input name="attrKey" placeholder="请输入元素属性字符串" />
+    <input name="attrValue" placeholder="请输入元素属性值" />
+    <div class="bt" id="create">添加</div>
+    <span class="require">所有字段必填</span>
+  </form>
+  <script src="./index.js" type="module"></script>
+</body>
+
+</html>

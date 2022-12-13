@@ -1,0 +1,133 @@
+body {
+  font-size: 14px;
+  padding: 8px;
+  width: 500px;
+}
+
+.list {
+  margin-bottom: 16px;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #1677ff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.li {
+  display: flex;
+}
+
+.li+.li {
+  margin-top: 10px;
+}
+
+.textWrapper {
+  flex: 1;
+  overflow: hidden;
+}
+
+.text {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.delete {
+  color: #ff4d4f;
+  cursor: pointer;
+  margin-left: 16px;
+}
+
+.delete:hover {
+  color: #ff7875;
+  background-color: #fff2f0;
+}
+
+input {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 4px 11px;
+  color: rgba(0, 0, 0, .88);
+  font-size: 12px;
+  height: 28px;
+  list-style: none;
+  font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  min-width: 0;
+  background-color: #fff;
+  background-image: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d9d9d9;
+  border-radius: 4px;
+  transition: all .2s;
+}
+
+input:hover {
+  border-color: #4096ff;
+  border-inline-end-width: 1px;
+}
+
+input:focus {
+  border-color: #4096ff;
+  box-shadow: 0 0 0 2px rgb(5 145 255 / 10%);
+  border-inline-end-width: 1px;
+  outline: 0;
+}
+
+input+input {
+  margin-top: 16px;
+}
+
+.bt {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  position: relative;
+  align-items: center;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  background-image: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all .2s cubic-bezier(.645, .045, .355, 1);
+  user-select: none;
+  touch-action: manipulation;
+  font-size: 14px;
+  height: 28px;
+  border-radius: 4px;
+  margin-top: 16px;
+  color: #fff;
+  background-color: #1677ff;
+  box-shadow: 0 2px 0 rgb(5 145 255 / 10%);
+  min-width: 100px;
+}
+
+.bt:hover {
+  color: #fff;
+  background-color: #4096ff;
+}
+
+.require {
+  margin-left: 16px;
+  color: #ff4d4f;
+  display: none;
+}
+
+.displayInitial {
+  display: initial;
+}
+
+.link {
+  font-weight: 400;
+  color: #1677ff;
+  user-select: none;
+  cursor: pointer;
+}
